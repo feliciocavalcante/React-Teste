@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css';
-import tenis from '../assets/img/tenis.png';
+
 
 export default function Index() {
   return (
