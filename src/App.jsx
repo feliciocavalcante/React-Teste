@@ -11,7 +11,10 @@ import CriaConta from './components/CriaConta/CriaConta.jsx';
 function App() {
   return (
     <>
-   <Index />
+      
+      <CriaConta />
+      
+     
      
     </>
   );

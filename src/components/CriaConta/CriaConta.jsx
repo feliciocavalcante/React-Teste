@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './CriaConta.module.css';
+import ImageCreateAccount from '../../assets/img/logoNike.png';
 
 export default function CriaConta() {
   useEffect(() => {
@@ -83,7 +84,7 @@ export default function CriaConta() {
       <header className={styles.header}>
         <div className={styles.container}>
           <div className={styles.logo}>
-            <img src="./assets/img/logoNike.png" alt="Logo Nike" />
+            <img src={ImageCreateAccount} alt="Logo Nike" />
           </div>
         </div>
       </header>
