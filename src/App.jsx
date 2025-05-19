@@ -4,18 +4,15 @@ import Categories from './components/Categories';
 import Products from './components/Products';
 import Collection from './components/Collection';
 import Footer from './components/Footer';
+import Index from './components/Index/Index.jsx';
 
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Carousel />
-        <Categories />
-        <Products />
-        <Collection />
-      </main>
-      <Footer />
+      <Index />
+     
+      
+     
     </>
   );
 }
