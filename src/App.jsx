@@ -5,13 +5,13 @@ import Products from './components/Products';
 import Collection from './components/Collection';
 import Footer from './components/Footer';
 import Index from './components/Index/Index.jsx';
+import CriaConta from './components/CriaConta/CriaConta.jsx';
+
 
 function App() {
   return (
     <>
-      <Index />
-     
-      
+   <Index />
      
     </>
   );
