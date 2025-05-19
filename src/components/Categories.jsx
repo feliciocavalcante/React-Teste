@@ -1,0 +1,87 @@
+import React from 'react';
+import calçadoImg from '../assets/img/tenistopo.png';
+import roupaImg from '../assets/img/roupa.png';
+import bolsaImg from '../assets/img/bolca.png';
+import camisaIcon from '../assets/img/camisa.png';
+import calcaIcon from '../assets/img/calca (2).png';
+import tenisIcon from '../assets/img/tenis10.png';
+import jaquetaIcon from '../assets/img/jaqueta2.png';
+import boneIcon from '../assets/img/bone.png';
+
+function Categories() {
+  return (
+    <>
+      {/* Categorias em destaque */}
+      <section className="categories-section">
+        <div className="container">
+          <div className="section-header center">
+            <h2 className="section-title">Categorias em destaque</h2>
+          </div>
+          <div className="categories-grid">
+            <div className="category-card">
+              <div className="category-image">
+                <img src={calçadoImg} alt="Calçados" />
+              </div>
+              <h3 className="category-title">Calçados</h3>
+              <p className="category-count">23 produtos</p>
+            </div>
+            <div className="category-card">
+              <div className="category-image">
+                <img src={roupaImg} alt="Roupas" />
+              </div>
+              <h3 className="category-title">Roupas</h3>
+              <p className="category-count">45 produtos</p>
+            </div>
+            <div className="category-card">
+              <div className="category-image">
+                <img src={bolsaImg} alt="Acessórios" />
+              </div>
+              <h3 className="category-title">Acessórios</h3>
+              <p className="category-count">15 produtos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ícones de categorias */}
+      <section className="product-categories">
+        <div className="container">
+          <div className="categories-icons">
+            <div className="category-icon">
+              <div className="icon-circle">
+                <img src={camisaIcon} alt="Camisetas" />
+              </div>
+              <p>Camisetas</p>
+            </div>
+            <div className="category-icon">
+              <div className="icon-circle">
+                <img src={calcaIcon} alt="Calças" />
+              </div>
+              <p>Calças</p>
+            </div>
+            <div className="category-icon">
+              <div className="icon-circle">
+                <img src={tenisIcon} alt="Calçados" />
+              </div>
+              <p>Calçados</p>
+            </div>
+            <div className="category-icon">
+              <div className="icon-circle">
+                <img src={jaquetaIcon} alt="Jaquetas" />
+              </div>
+              <p>Jaquetas</p>
+            </div>
+            <div className="category-icon">
+              <div className="icon-circle">
+                <img src={boneIcon} alt="Acessórios" />
+              </div>
+              <p>Acessórios</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default Categories;
