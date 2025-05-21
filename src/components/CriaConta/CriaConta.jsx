@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import styles from './CriaConta.module.css';
-import ImageCreateAccount from '../../assets/img/logoNike.png';
+import logoNike from '../../assets/img/logoNike.png';
+import tenis from '../../assets/img/tenis.png';
+import logoNikeBranca from '../../assets/img/logoNikeBranca.png';
 
 export default function CriaConta() {
   useEffect(() => {
@@ -84,7 +86,7 @@ export default function CriaConta() {
       <header className={styles.header}>
         <div className={styles.container}>
           <div className={styles.logo}>
-            <img src={ImageCreateAccount} alt="Logo Nike" />
+            <img src={logoNike} alt="Logo Nike" />
           </div>
         </div>
       </header>
@@ -115,7 +117,7 @@ export default function CriaConta() {
               </div>
             </div>
             <div className={styles['product-image']}>
-              <img src="/img/tenis.png" alt="Tênis esportivo" id="shoe-image" />
+              <img src={tenis} alt="Tênis esportivo" id="shoe-image" />
             </div>
           </div>
         </div>
@@ -125,7 +127,7 @@ export default function CriaConta() {
         <div className={styles.container}>
           <div className={styles['footer-content']}>
             <div className={styles['footer-logo']}>
-              <img src="/PageSelecionado/img/logoNikeBranca.png" alt="Logo Nike Branca" />
+              <img src={logoNikeBranca} alt="Logo Nike Branca" />
             </div>
             <div className={styles['footer-links']}>
               <div className={styles['footer-column']}>

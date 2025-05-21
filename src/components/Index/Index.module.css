@@ -148,7 +148,7 @@ body {
 .product-display {
     width: 50%;
     background-color: #c8bef0;
-    background-image: url('./assets/img/tenis.png');
+    background-image: url('../../assets/img/tenis.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
