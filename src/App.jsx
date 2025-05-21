@@ -8,13 +8,14 @@ import Index from './components/Index/Index.jsx';
 import CriaConta from './components/CriaConta/CriaConta.jsx';
 import MinhasInformacoes from './components/MinhasInformacoes/MinhasInformacoes.jsx';
 import Produto from './components/Produto/Produto.jsx';
+import Formulario from './components/FormularioCriaConta/Formulario.jsx';
 
 
 function App() {
   return (
     <>
       
-      <Produto/>
+      <Formulario/>
      
       
       
