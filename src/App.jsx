@@ -11,17 +11,13 @@ import Produto from './components/Produto/Produto.jsx';
 import Formulario from './components/FormularioCriaConta/Formulario.jsx';
 import Compra from './components/Compra/Compra.jsx';
 import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra.jsx';
+import MeusPedidos from './components/MeusPedidos/MeusPedidos.jsx';
 
 function App() {
   return (
     <>
-      
-      
-      <FinalizarCompra/>
-     
-      
-      
-     
+      <MeusPedidos />
+
      
     </>
   );

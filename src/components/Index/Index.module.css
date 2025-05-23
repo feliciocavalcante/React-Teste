@@ -293,6 +293,12 @@ footer {
     .btn-login {
         font-size: 1rem;
         padding: 1.1rem;
+        
+    }
+
+     a{
+        font-size: 0.8rem;
+        
     }
 
     .social-btn {

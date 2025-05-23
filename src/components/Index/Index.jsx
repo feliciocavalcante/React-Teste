@@ -44,7 +44,7 @@ export default function Index() {
                   </a>
                 </div>
                 <button type="submit" className={styles["btn-login"]}>
-                  <a href="/Homeindex.html">Acessar Conta</a>
+                  <a className={styles.a} href="/Homeindex.html">Acessar Conta</a>
                 </button>
                 <div className={styles["alt-login"]}>
                   <p>Ou faça login com</p>
