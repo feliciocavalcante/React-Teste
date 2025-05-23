@@ -10,13 +10,14 @@ import MinhasInformacoes from './components/MinhasInformacoes/MinhasInformacoes.
 import Produto from './components/Produto/Produto.jsx';
 import Formulario from './components/FormularioCriaConta/Formulario.jsx';
 import Compra from './components/Compra/Compra.jsx';
+import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra.jsx';
 
 function App() {
   return (
     <>
       
       
-      <Compra />
+      <FinalizarCompra/>
      
       
       
