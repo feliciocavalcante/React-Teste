@@ -9,13 +9,14 @@ import CriaConta from './components/CriaConta/CriaConta.jsx';
 import MinhasInformacoes from './components/MinhasInformacoes/MinhasInformacoes.jsx';
 import Produto from './components/Produto/Produto.jsx';
 import Formulario from './components/FormularioCriaConta/Formulario.jsx';
-
+import Compra from './components/Compra/Compra.jsx';
 
 function App() {
   return (
     <>
       
-      <Formulario/>
+      
+      <Compra />
      
       
       
