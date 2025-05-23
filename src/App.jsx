@@ -12,11 +12,12 @@ import Formulario from './components/FormularioCriaConta/Formulario.jsx';
 import Compra from './components/Compra/Compra.jsx';
 import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra.jsx';
 import MeusPedidos from './components/MeusPedidos/MeusPedidos.jsx';
+import Selecionado from './components/Selecionado/Selecionado.jsx';
 
 function App() {
   return (
     <>
-      <MeusPedidos />
+      <Selecionado/>
 
      
     </>
