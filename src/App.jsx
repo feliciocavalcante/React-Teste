@@ -13,11 +13,13 @@ import Compra from './components/Compra/Compra.jsx';
 import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra.jsx';
 import MeusPedidos from './components/MeusPedidos/MeusPedidos.jsx';
 import Selecionado from './components/Selecionado/Selecionado.jsx';
+import CompraRealizada from './components/CompraRealizada/CompraRealizada.jsx';
 
 function App() {
   return (
     <>
-      <Selecionado/>
+      <CompraRealizada />
+      
 
      
     </>
