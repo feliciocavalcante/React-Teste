@@ -6,6 +6,7 @@ import tenis1 from '../../assets/img/tenis4.png';
 import tenis2 from '../../assets/img/tenis3.png';
 import tenis3 from '../../assets/img/tenistopo.png';
 import tenis4 from '../../assets/img/tenis2.png';
+import { Link } from 'react-router-dom';
 
 const pedidos = [
   { img: tenis1, data: '12/05/2025', status: 'transit' },
@@ -46,7 +47,7 @@ const MeusPedidos = () => {
                     </div>
                     <nav className={styles.mainNav}>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><Link to="/">Home</Link></li>
                             <li><a href="#">Produtos</a></li>
                             <li><a href="#">Categorias</a></li>
                             <li><a href="#" className={styles.active}>Meus Pedidos</a></li>
@@ -63,7 +64,7 @@ const MeusPedidos = () => {
               <ul>
                 <li><a href="#">Meu Perfil</a></li>
                 <li><a href="#" className={styles.active}>Meus Pedidos</a></li>
-                <li><a href="#">Minhas Informações</a></li>
+                <li><Link to="/minhas-informacoes">Minhas Informações</Link></li>
                 <li><a href="#">Métodos de Pagamento</a></li>
               </ul>
             </aside>

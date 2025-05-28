@@ -80,6 +80,10 @@ main {
     font-size: 14px;
 }
 
+.form-container a{
+    color: #d81b60;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -164,13 +168,29 @@ main {
     height: 40px;
     border-radius: 50%;
     border: 1px solid #ddd;
-    color: #555;
+    color: #fcf9f9;
     transition: all 0.3s;
 }
 
-.social-login a:hover {
-    background-color: #f5f5f5;
+.facebook-btn {
+    background-color: #3b5998;
+    color: white;
 }
+
+.facebook-btn:hover {
+    background-color: #2d4373;
+}
+
+.google-btn {
+    background-color: #dd4b39;
+    color: white;
+}
+
+.google-btn:hover {
+    background-color: #c23321;
+}
+
+
 
 .product-image {
     flex: 1;
@@ -277,9 +297,9 @@ footer {
     transition: background-color 0.3s;
 }
 
-.social-icons a:hover {
-    background-color: #d81b60;
-}
+
+
+
 
 .footer-bottom p {
     font-size: 14px;

@@ -128,7 +128,7 @@ header {
 }
 
 /* Main Content Styles */
-main {
+.main {
     flex: 1;
     padding: 30px 0;
     background-color: #e8e4f3;

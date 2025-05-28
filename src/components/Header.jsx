@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/img/logoNike.png';
 import cartIcon from '../assets/img/carrinho.png';
 import tenistopo from '../assets/img/tenistopo.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -17,8 +18,9 @@ function Header() {
           </button>
         </div>
         <div className="header-actions">
-          <a href="#" className="header-link">Cadastre-se</a>
-          <button className="primary-button">Entrar</button>
+          
+          <Link to="/criar-conta" className="header-link" >Cadastre-se</Link>
+         <Link to='/index'> <button className="primary-button">Entrar</button></Link>
           <a href="#" className="cart-icon">
             <img src={cartIcon} alt="Carrinho" />
           </a>
@@ -66,9 +68,9 @@ function Header() {
           </button>
           <ul className="nav-list" id="nav-list">
             <li><a href="#" className="nav-link">Home</a></li>
-            <li><a href="#" className="nav-link">Produtos</a></li>
+            <li> <Link to="/produto/:id" className="nav-link">Produtos</Link></li>
             <li><a href="#" className="nav-link">Categorias</a></li>
-            <li><a href="#" className="nav-link">Meus Pedidos</a></li>
+            <li><Link to="/meus-pedidos" className="nav-link">Meus Pedidos</Link></li>
           </ul>
         </div>
       </nav>

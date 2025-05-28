@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Carousel from './components/Carousel';
 import Categories from './components/Categories';
@@ -14,15 +15,40 @@ import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra.jsx';
 import MeusPedidos from './components/MeusPedidos/MeusPedidos.jsx';
 import Selecionado from './components/Selecionado/Selecionado.jsx';
 import CompraRealizada from './components/CompraRealizada/CompraRealizada.jsx';
+import Home from './components/Home/Home.jsx';
 
 function App() {
   return (
-    <>
-      <CompraRealizada />
-      
+    <Router>
 
-     
-    </>
+      <Routes>
+        {/* Página inicial */}
+        <Route path="/" element={<Home />} />
+        
+        {/* Página inicial com componentes */}
+        <Route path="/index" element={
+          <>
+            <Index />
+          </>
+        } />
+        
+        {/* Rotas de conta */}
+        <Route path="/criar-conta" element={<CriaConta />} />
+        <Route path="/formulario" element={<Formulario />} />
+        <Route path="/minhas-informacoes" element={<MinhasInformacoes />} />
+        <Route path="/meus-pedidos" element={<MeusPedidos />} />
+        
+        {/* Rotas de produtos */}
+        <Route path="/produto/:id" element={<Produto />} />
+        <Route path="/selecionado" element={<Selecionado />} />
+        
+        {/* Rotas de compra */}
+        <Route path="/compra" element={<Compra />} />
+        <Route path="/finalizar-compra" element={<FinalizarCompra />} />
+        <Route path="/compra-realizada" element={<CompraRealizada />} />
+      </Routes>
+      
+    </Router>
   );
 }
 

@@ -3,7 +3,7 @@ import styles from './CriaConta.module.css';
 import logoNike from '../../assets/img/logoNike.png';
 import tenis from '../../assets/img/tenis.png';
 import logoNikeBranca from '../../assets/img/logoNikeBranca.png';
-
+import { Link } from 'react-router-dom';
 export default function CriaConta() {
   useEffect(() => {
     const form = document.getElementById('signup-form');
@@ -96,7 +96,7 @@ export default function CriaConta() {
           <div className={styles['signup-container']}>
             <div className={styles['form-container']}>
               <h2>Crie sua conta</h2>
-              <p>Já possui uma conta? <a href="#">Entre aqui</a>.</p>
+              <p>Já possui uma conta?  <Link to="/index" >Entre aqui</Link>.</p>
               <form id="signup-form">
                 <div className={styles['form-group']}>
                   <label htmlFor="nome">Nome*</label>

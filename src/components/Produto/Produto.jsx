@@ -4,6 +4,7 @@ import tenis2 from '../../assets/img/tenis2.png';
 import logoNikeBranca from '../../assets/img/logoNikeBranca.png';
 import logoNike from '../../assets/img/logoNike.png';
 import tenistopo from '../../assets/img/tenistopo.png';
+import { Link } from 'react-router-dom';
 
 const Produto = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -114,10 +115,10 @@ const Produto = () => {
         
         <nav className={styles.mainNav}>
           <ul>
-            <li><a href="/Homeindex.html">Home</a></li>
+            <li><Link to="/" >Home</Link></li>
             <li><a href="#" className={styles.active}>Produtos</a></li>
             <li><a href="#">Categorias</a></li>
-            <li><a href="#">Meus Pedidos</a></li>
+            <li><Link to="/meus-pedidos" >Meus Pedidos</Link></li>
           </ul>
         </nav>
       </header>

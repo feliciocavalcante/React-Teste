@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './index.module.css';
 import tenis from '../../assets/img/tenis.png';
+import { Link } from 'react-router-dom';
 
 export default function Index() {
   return (
@@ -44,7 +45,8 @@ export default function Index() {
                   </a>
                 </div>
                 <button type="submit" className={styles["btn-login"]}>
-                  <a className={styles.a} href="/Homeindex.html">Acessar Conta</a>
+                  
+                 <Link to="/" className={styles.a}>Acessar Conta</Link>
                 </button>
                 <div className={styles["alt-login"]}>
                   <p>Ou faça login com</p>

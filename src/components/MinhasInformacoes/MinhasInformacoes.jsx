@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './MinhasInformacoes.module.css';
 import logoNike from '../../assets/img/logoNike.png';
 import logoNikeBranca from '../../assets/img/logoNikeBranca.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -185,7 +186,7 @@ const MinhasInformacoesPage = () => {
               <li><a href="#">Home</a></li>
               <li><a href="#">Produtos</a></li>
               <li><a href="#">Categorias</a></li>
-              <li><a href="#" className={styles.active}>Meus Pedidos</a></li>
+              <li><a href="#" >Meus Pedidos</a></li>
             </ul>
           </nav>
         </div>
@@ -198,7 +199,7 @@ const MinhasInformacoesPage = () => {
               <h3>Meu Perfil</h3>
               <ul>
                 <li><a href="#">Meu Perfil</a></li>
-                <li><a href="#">Meus Pedidos</a></li>
+                <li><Link to="/meus-pedidos">Meus Pedidos</Link></li>
                 <li><a href="#" className={styles.active}>Minhas Informações</a></li>
                 <li><a href="#">Métodos de Pagamento</a></li>
               </ul>
