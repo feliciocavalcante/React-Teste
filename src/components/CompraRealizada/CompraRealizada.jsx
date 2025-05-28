@@ -3,6 +3,8 @@ import styles from './CompraRealizada.module.css';
 import logo from '../../assets/img/logoNike.png';
 import logoBranca from '../../assets/img/logoNikeBranca.png';
 import produtoImg from '../../assets/img/tenistopo.png';
+import { Link } from 'react-router-dom';
+
 
 const CompraRealizada = () => {
     const handlePrint = () => {
@@ -100,7 +102,7 @@ const CompraRealizada = () => {
                         <img src={logo} alt="Logo Nike" />
                         <nav className={styles.desktopNav}>
                             <ul>
-                                <li><a href="#">Início</a></li>
+                                <li><Link to='/'>Home</Link></li>
                                 <li><a href="#">Produtos</a></li>
                                 <li><a href="#">Categorias</a></li>
                                 <li><a href="#">Meus Pedidos</a></li>

@@ -7,13 +7,42 @@ import tenis2 from '../../assets/img/tenis2.png';
 import tenis3 from '../../assets/img/tenis3.png';
 import anterior from '../../assets/img/anterior.png';
 import nike from '../../assets/img/logoNike.png';
+import { Link } from 'react-router-dom';
+import { useCart } from '../Context/CartContext';
+import Cart from '../Context/Cart';
+
 
 const Selecionado = () => {
     const [selectedSize, setSelectedSize] = useState('40');
     const [mainImage, setMainImage] = useState(tenisTopo);
+    const { cartItems, addToCart } = useCart();
+
     const sizes = ['38', '39', '40', '41', '42'];
     const thumbnails = [tenisTopo, tenis1, tenisTopo, tenis1];
 
+    const handleBuy = () => {
+        const item = {
+            id: 1,
+            name: "Tênis Nike Revolution 6 Next Nature Masculino",
+            price: 219.90,
+            size: selectedSize,
+            image: mainImage
+        };
+        addToCart(item);
+        alert('Produto adicionado ao carrinho!');
+
+        const [showCart, setShowCart] = useState(false);
+const { addToCart } = useCart();
+
+const handleAddToCart = () => {
+    addToCart({
+        title: 'Tênis Nike Revolution 6 Next Nature Masculino',
+        price: 'R$ 219,90',
+        image: mainImage
+    });
+    setShowCart(true); // exibe o carrinho automaticamente ao adicionar
+};
+    };
     return (
         <div>
             <header className={styles.mainHeader}>
@@ -21,19 +50,24 @@ const Selecionado = () => {
                     <img className={styles.logo} src={nike} alt="Voltar" />
                     <div className={styles.searchBar}>
                         <input type="text" placeholder="Buscar produtos..." />
-                        <button><i className="fas fa-search"></i></button>
+                        <button onClick={() => setShowCart(true)}><i className="fas fa-shopping-cart"></i></button>
+
                     </div>
                     <div className={styles.userActions}>
-                        <button><i className="fas fa-shopping-cart"></i></button>
-                        <a href="#">Entrar</a>
+                        <button>
+                            <i className="fas fa-shopping-cart"></i>
+                            {cartItems.length > 0 && (
+                                <span className={styles.cartCount}>{cartItems.length}</span>
+                            )}
+                        </button>
                     </div>
                 </div>
                 <nav className={styles.mainNav}>
                     <ul className={styles.container}>
-                        <li><a href="/Homeindex.html">Home</a></li>
-                        <li><a href="/PageProdutosindex.html">Produtos</a></li>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/produto/:id'>Produtos</Link></li>
                         <li><a href="#">Categorias</a></li>
-                        <li><a href="#">Meus Pedidos</a></li>
+                        <li><Link to='/meus-pedidos'>Meus Pedidos</Link></li>
                     </ul>
                 </nav>
             </header>
@@ -81,15 +115,13 @@ const Selecionado = () => {
                         </div>
 
                         <p className={styles.price}>R$ 219,90</p>
-                        <a href="/FinalizarCompraindex.html">
-                            <button className={styles.buyButton}>Comprar</button>
-                        </a>
+                        <button className={styles.buyButton} onClick={addToCart}>Comprar</button>
                     </div>
                 </div>
 
                 <div className={styles.relatedProducts}>
                     <h2>Produtos Relacionados</h2>
-                    <div className={styles.productGrid}>
+                    <Link to='/produto/:id'><div className={styles.productGrid}>
                         {[tenis1, tenis1, tenis2, tenis2].map((img, i) => (
                             <div className={styles.productCard} key={i}>
                                 <img src={img} alt="Tênis K-Swiss VB Masculino" />
@@ -98,7 +130,7 @@ const Selecionado = () => {
                                 <p>R$ 100</p>
                             </div>
                         ))}
-                    </div>
+                    </div></Link>
                 </div>
             </main>
 
@@ -150,6 +182,9 @@ const Selecionado = () => {
                     © 2023 Digital College
                 </div>
             </footer>
+
+            
+
         </div>
     );
 };

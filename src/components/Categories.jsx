@@ -7,7 +7,7 @@ import calcaIcon from '../assets/img/calca (2).png';
 import tenisIcon from '../assets/img/tenis10.png';
 import jaquetaIcon from '../assets/img/jaqueta2.png';
 import boneIcon from '../assets/img/bone.png';
-
+import { Link } from 'react-router-dom';
 function Categories() {
   return (
     <>
@@ -20,10 +20,10 @@ function Categories() {
           <div className="categories-grid">
             <div className="category-card">
               <div className="category-image">
-                <img src={calçadoImg} alt="Calçados" />
+                <Link to='/produto/:id'><img src={calçadoImg} alt="Calçados" /></Link>
               </div>
-              <h3 className="category-title">Calçados</h3>
-              <p className="category-count">23 produtos</p>
+            <Link to='/produto/:id'><h3 className="category-title">Calçados</h3></Link>
+            <Link to='/produto/:id'><p className="category-count">23 produtos</p></Link>
             </div>
             <div className="category-card">
               <div className="category-image">

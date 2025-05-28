@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Formulario.module.css';
 import logoNike from '../../assets/img/logoNike.png';
 import logoNikeBranca from '../../assets/img/logoNikeBranca.png';
-
+import { Link } from 'react-router-dom';
 const Formulario = () => {
   const [formData, setFormData] = useState({
     nome: '',
@@ -430,7 +430,7 @@ const Formulario = () => {
                 </label>
               </div>
               
-              <button type="submit" className={styles.btnPrimary}>Criar Conta</button>
+              <Link to='/index'><button type="submit" className={styles.btnPrimary}>Criar Conta</button></Link>
             </form>
           </div>
         </div>

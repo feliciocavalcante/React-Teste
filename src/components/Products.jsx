@@ -1,6 +1,7 @@
 import React from 'react';
 import produto1 from '../assets/img/tenistopo.png';
 import produto2 from '../assets/img/tenis4.png';
+import { Link } from 'react-router-dom';
 
 const produtos = [
   { nome: 'Nike Air Max', img: produto1 },
@@ -25,15 +26,16 @@ function Products() {
             <div className="product-card" key={index}>
               <a href="#">
                 <div className="product-image">
-                  <img src={produto.img} alt={produto.nome} />
+                 <Link to='/selecionado'> <img src={produto.img} alt={produto.nome} /></Link>
+                  
                 </div>
-                <div className="product-info">
-                  <h3 className="product-name">{produto.nome}</h3>
+                <Link to='/selecionado'><div className="product-info">
+                 <Link to='/selecionado'><h3 className="product-name">{produto.nome}</h3></Link> 
                   <div className="product-price">
                     <span className="price-discount">R$ 299</span>
                     <span className="price-original">R$ 399</span>
                   </div>
-                </div>
+                </div></Link>
               </a>
             </div>
           ))}

@@ -186,7 +186,7 @@ const MinhasInformacoesPage = () => {
               <li><a href="#">Home</a></li>
               <li><a href="#">Produtos</a></li>
               <li><a href="#">Categorias</a></li>
-              <li><a href="#" >Meus Pedidos</a></li>
+              <li><Link to='/meus-pedidos'>Meus Pedidos</Link></li>
             </ul>
           </nav>
         </div>

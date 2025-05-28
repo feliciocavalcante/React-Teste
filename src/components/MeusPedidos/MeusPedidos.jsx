@@ -48,7 +48,7 @@ const MeusPedidos = () => {
                     <nav className={styles.mainNav}>
                         <ul>
                             <li><Link to="/">Home</Link></li>
-                            <li><a href="#">Produtos</a></li>
+                            <li><Link to='/produto/:id'>Produtos</Link></li>
                             <li><a href="#">Categorias</a></li>
                             <li><a href="#" className={styles.active}>Meus Pedidos</a></li>
                         </ul>

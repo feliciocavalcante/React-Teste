@@ -13,14 +13,10 @@ export default function Index() {
               <h2>Acesse sua conta</h2>
               <p className={styles.subtitle}>
                 Novo cliente?{" "}
-                <a href="#" className={styles.link}>
+                <Link to='/criar-conta'><a href="#" className={styles.link}>
                   Criar registro
-                </a>{" "}
-                se{" "}
-                <a href="#" className={styles.link}>
-                  aqui
-                </a>
-                .
+                </a></Link>{" "}
+                
               </p>
               <form>
                 <div className={styles["form-group"]}>

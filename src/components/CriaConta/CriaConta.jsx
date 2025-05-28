@@ -106,7 +106,7 @@ export default function CriaConta() {
                   <label htmlFor="email">Email*</label>
                   <input type="email" id="email" placeholder="Insira seu email" required />
                 </div>
-                <button type="submit" className={styles['btn-primary']}>Criar Conta</button>
+                <Link to='/formulario'><button type="submit" className={styles['btn-primary']}>Criar Conta</button></Link>
               </form>
               <div className={styles['alternative-login']}>
                 <p>Ou faça login com</p>

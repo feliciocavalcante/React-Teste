@@ -230,8 +230,8 @@ const Produto = () => {
         <section className={styles.products}>
           <div className={styles.productGrid}>
             {products.map((product) => (
-              <div key={product.id} className={styles.productCard} data-price={product.price}>
-                <div className={styles.productPosition}>
+            <Link to='/selecionado'><div key={product.id} className={styles.productCard} data-price={product.price}>
+                <Link to='/selecionado'><div className={styles.productPosition}>
                   <img 
                     src={product.image} 
                     alt={product.name} 
@@ -240,12 +240,12 @@ const Produto = () => {
                   {product.hasOffer && (
                     <div className={styles.promoBadge}>Oferta</div>
                   )}
-                </div>
+                </div></Link>
                 <div className={styles.productInfo}>
                   <div className={styles.productName}>{product.name}</div>
                   <div className={styles.productPrice}>R$ {product.price.toFixed(2)}</div>
                 </div>
-              </div>
+              </div></Link>
             ))}
           </div>
         </section>

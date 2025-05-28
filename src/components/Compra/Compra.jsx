@@ -15,6 +15,7 @@ import styles from './Compra.module.css';
 import logo from '../../assets/img/logoNike.png';
 import logoBranca from '../../assets/img/logoNikeBranca.png';
 import tenis2 from '../../assets/img/tenis2.png';
+import { Link } from 'react-router-dom';
 
 const Compra = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -56,10 +57,10 @@ const Compra = () => {
 
             <nav className={`${styles.mainNav} ${menuActive ? styles.active : ''}`}>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/produto/:id'>Produtos</Link></li>
                 <li><a href="#">Categorias</a></li>
-                <li><a href="#">Meus Pedidos</a></li>
+                <li><Link to='/meus-pedidos'>Meus Pedidos</Link></li>
               </ul>
             </nav>
 
@@ -153,11 +154,11 @@ const Compra = () => {
                   <div className={styles.installments}>ou 10x de R$ {installment.toFixed(2).replace('.', ',')} sem juros</div>
                 </div>
               </div>
-              <button className={styles.checkoutBtn}><a href="FinalizarCompraindex.html">FINALIZAR COMPRA</a></button>
+              <Link to='/compra-realizada'><button className={styles.checkoutBtn}><a href="">FINALIZAR COMPRA</a></button></Link>
             </div>
           </div>
 
-          <div className={styles.relatedProducts}>
+          <Link to='/selecionado'><div className={styles.relatedProducts}>
             <div className={styles.sectionHeader}>
               <h2>Produtos Relacionados</h2>
               <a href="#" className={styles.viewAll}>Ver todos <FaChevronRight /></a>
@@ -177,7 +178,7 @@ const Compra = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div></Link>
         </div>
       </main>
 
