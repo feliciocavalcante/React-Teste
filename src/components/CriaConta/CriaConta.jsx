@@ -41,7 +41,7 @@ export default function CriaConta() {
             <div className={styles['form-container']}>
               <h2>Crie sua conta</h2>
               <p>Já possui uma conta?  <Link to="/index" >Entre aqui</Link>.</p>
-              <form onSubmit={handleNext}>
+              <form onSubmit={handleNext} className={styles['signup-form']}>
                 <label>Nome*</label>
                 <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
                 <label>Email*</label>

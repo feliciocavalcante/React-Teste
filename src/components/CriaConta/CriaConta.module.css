@@ -59,6 +59,22 @@ main {
     gap: 30px;
 }
 
+.signup-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+
 .form-container {
     background-color: white;
     padding: 30px;
@@ -120,6 +136,7 @@ main {
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .btn-primary:hover {
