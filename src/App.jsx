@@ -16,11 +16,12 @@ import MeusPedidos from './components/MeusPedidos/MeusPedidos.jsx';
 import Selecionado from './components/Selecionado/Selecionado.jsx';
 import CompraRealizada from './components/CompraRealizada/CompraRealizada.jsx';
 import Home from './components/Home/Home.jsx';
+import Error404 from './components/Error404/Error404.jsx';
 
 function App() {
   return (
     <Router>
-
+        
       <Routes>
         {/* Página inicial */}
         <Route path="/" element={<Home />} />
@@ -41,6 +42,7 @@ function App() {
         {/* Rotas de produtos */}
         <Route path="/produto/:id" element={<Produto />} />
         <Route path="/selecionado" element={<Selecionado />} />
+        <Route path="/Error404" element={<Error404 />} />
         
         {/* Rotas de compra */}
         <Route path="/compra" element={<Compra />} />

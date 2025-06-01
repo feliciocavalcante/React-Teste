@@ -103,9 +103,9 @@ const CompraRealizada = () => {
                         <nav className={styles.desktopNav}>
                             <ul>
                                 <li><Link to='/'>Home</Link></li>
-                                <li><a href="#">Produtos</a></li>
-                                <li><a href="#">Categorias</a></li>
-                                <li><a href="#">Meus Pedidos</a></li>
+                                <li><Link to='/produto/:id'>Produto</Link></li>
+                                <li><Link to='/Error404'>Categoria</Link></li>
+                                <li><Link to='/meus-pedidos'>Meus Pedidos</Link></li>
                             </ul>
                         </nav>
                     </div>

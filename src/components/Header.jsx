@@ -67,9 +67,9 @@ function Header() {
             <i className="fa-solid fa-bars"></i>
           </button>
           <ul className="nav-list" id="nav-list">
-            <li><a href="#" className="nav-link">Home</a></li>
+            <li><a href="" className="nav-link">Home</a></li>
             <li> <Link to="/produto/:id" className="nav-link">Produtos</Link></li>
-            <li><a href="#" className="nav-link">Categorias</a></li>
+            <li><Link to="/Error404" className="nav-link">Categorias</Link></li>
             <li><Link to="/meus-pedidos" className="nav-link">Meus Pedidos</Link></li>
           </ul>
         </div>

@@ -59,7 +59,7 @@ const Compra = () => {
               <ul>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/produto/:id'>Produtos</Link></li>
-                <li><a href="#">Categorias</a></li>
+                <li><Link to='/Error404'>Categoria</Link></li>
                 <li><Link to='/meus-pedidos'>Meus Pedidos</Link></li>
               </ul>
             </nav>

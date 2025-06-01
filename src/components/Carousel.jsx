@@ -3,6 +3,7 @@ import tenistopo from '../assets/img/tenistopo.png';
 import tenis2 from '../assets/img/tenis2.png';
 import tenis3 from '../assets/img/tenis3.png';
 import tenis4 from '../assets/img/tenis4.png';
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
@@ -22,6 +23,7 @@ const slides = [
     description: 'Complemente seu estilo com nossa linha de acessórios premium para esportes e casual.',
     image: tenis3,
     buttonText: 'Ver acessórios'
+    
   },
   {
     title: 'Edição limitada',

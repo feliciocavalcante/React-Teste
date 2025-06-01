@@ -27,24 +27,26 @@ function Categories() {
             </div>
             <div className="category-card">
               <div className="category-image">
-                <img src={roupaImg} alt="Roupas" />
+                
+                <Link to='/error404'><img src={roupaImg} alt="Roupas" /></Link>
               </div>
-              <h3 className="category-title">Roupas</h3>
-              <p className="category-count">45 produtos</p>
+              
+             <Link to='/Error404'><h3 className="category-title">Roupas</h3></Link>
+              <Link to='/Error404'><p className="category-count">23 produtos</p></Link>
             </div>
             <div className="category-card">
               <div className="category-image">
-                <img src={bolsaImg} alt="Acessórios" />
+                <Link to='/Error404'><img src={bolsaImg} alt="Acessórios" /></Link>
               </div>
-              <h3 className="category-title">Acessórios</h3>
-              <p className="category-count">15 produtos</p>
+              <Link to='/Error404'><h3 className="category-title">Acessórios</h3></Link>
+              <Link to='/Error404'><p className="category-count">15 produtos</p></Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Ícones de categorias */}
-      <section className="product-categories">
+      <Link to='/Error404'><section className="product-categories">
         <div className="container">
           <div className="categories-icons">
             <div className="category-icon">
@@ -59,12 +61,12 @@ function Categories() {
               </div>
               <p>Calças</p>
             </div>
-            <div className="category-icon">
+            <Link to='/produto/:id'><div className="category-icon">
               <div className="icon-circle">
                 <img src={tenisIcon} alt="Calçados" />
               </div>
               <p>Calçados</p>
-            </div>
+            </div></Link>
             <div className="category-icon">
               <div className="icon-circle">
                 <img src={jaquetaIcon} alt="Jaquetas" />
@@ -79,7 +81,7 @@ function Categories() {
             </div>
           </div>
         </div>
-      </section>
+      </section></Link>
     </>
   );
 }

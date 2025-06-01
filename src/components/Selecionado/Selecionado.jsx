@@ -42,6 +42,13 @@ const handleAddToCart = () => {
     });
     setShowCart(true); // exibe o carrinho automaticamente ao adicionar
 };
+
+const [showCartDetails, setShowCartDetails] = useState(false);
+
+const toggleCartDetails = () => {
+  setShowCartDetails(prev => !prev);
+};
+
     };
     return (
         <div>
@@ -54,7 +61,7 @@ const handleAddToCart = () => {
 
                     </div>
                     <div className={styles.userActions}>
-                        <button>
+                        <button >
                             <i className="fas fa-shopping-cart"></i>
                             {cartItems.length > 0 && (
                                 <span className={styles.cartCount}>{cartItems.length}</span>
@@ -66,7 +73,7 @@ const handleAddToCart = () => {
                     <ul className={styles.container}>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/produto/:id'>Produtos</Link></li>
-                        <li><a href="#">Categorias</a></li>
+                        <li><Link to='/Error404'>Categoria</Link></li>
                         <li><Link to='/meus-pedidos'>Meus Pedidos</Link></li>
                     </ul>
                 </nav>
@@ -115,7 +122,8 @@ const handleAddToCart = () => {
                         </div>
 
                         <p className={styles.price}>R$ 219,90</p>
-                        <button className={styles.buyButton} onClick={addToCart}>Comprar</button>
+                        <Link to='/Compra'><button className={styles.buyButton} onClick={addToCart} >Comprar</button></Link>
+                        
                     </div>
                 </div>
 

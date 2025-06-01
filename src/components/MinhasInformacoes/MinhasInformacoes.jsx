@@ -183,9 +183,9 @@ const MinhasInformacoesPage = () => {
           
           <nav className={styles.mainNav}>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Produtos</a></li>
-              <li><a href="#">Categorias</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/produto/:id">Produtos</Link></li>
+              <li><Link to="/error404">Categoria</Link></li>
               <li><Link to='/meus-pedidos'>Meus Pedidos</Link></li>
             </ul>
           </nav>
@@ -198,10 +198,10 @@ const MinhasInformacoesPage = () => {
             <aside className={styles.sidebar}>
               <h3>Meu Perfil</h3>
               <ul>
-                <li><a href="#">Meu Perfil</a></li>
+                <li><Link to="/Error404">Meu Perfil</Link></li>
                 <li><Link to="/meus-pedidos">Meus Pedidos</Link></li>
                 <li><a href="#" className={styles.active}>Minhas Informações</a></li>
-                <li><a href="#">Métodos de Pagamento</a></li>
+                <li><Link to="/Error404">Metodos de Pagamento</Link></li>
               </ul>
             </aside>
             

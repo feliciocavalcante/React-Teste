@@ -8,50 +8,56 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function Index() {
- const [email, setEmail] = useState('');
-const [senha, setSenha] = useState('');
-const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const navigate = useNavigate();
 
-const handleLogin = async (e) => {
-  e.preventDefault();
-  const { error } = await supabase.auth.signInWithPassword({ email, password: senha });
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    const { error } = await supabase.auth.signInWithPassword({ email, password: senha });
 
-  if (error) {
-    alert('Login falhou: ' + error.message);
-  } else {
-    alert('Login realizado!');
-    navigate('/'); // Página principal
-  }
-};
+    if (error) {
+      alert('Login falhou: ' + error.message);
+    } else {
+      alert('Login realizado!');
+      navigate('/'); // Página principal
+    }
+  };
   return (
-    <div>
+    <div >
       <>
         <main className={styles.container}>
-      <div className={styles["login-container"]}>
-        <div className={styles["login-card"]}>
-          <h2>Acesse sua conta</h2>
-          <p className={styles.subtitle}>
-            Novo cliente? <Link to="/criar-conta" className={styles.link}>Criar conta</Link>
-          </p>
-          <form onSubmit={handleLogin}>
-            <div className={styles["form-group"]}>
-              <label htmlFor="email">Login*</label>
-              <input type="email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+
+          <div className={styles["login-container"]}>
+            <div className={styles["login-card"]}>
+              <h2>Acesse sua conta</h2>
+              <p className={styles.subtitle}>
+                Novo cliente? <Link to="/criar-conta" className={styles.link}>Criar conta</Link>
+              </p>
+              <form onSubmit={handleLogin}>
+                <div className={styles["form-group"]}>
+                  <label htmlFor="email">Login*</label>
+                  <input type="email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                </div>
+                <div className={styles["form-group"]}>
+                  <label htmlFor="senha">Senha*</label>
+                  <input type="password" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} required />
+                </div>
+                <div className={styles["forgot-password"]}>
+                  <a href="#" className={styles.link}>Esqueci minha senha</a>
+                </div>
+                <button type="submit" className={styles["btn-login"]}>
+                  Acessar Conta
+                </button>
+              </form>
             </div>
-            <div className={styles["form-group"]}>
-              <label htmlFor="senha">Senha*</label>
-              <input type="password" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} required />
-            </div>
-            <div className={styles["forgot-password"]}>
-              <a href="#" className={styles.link}>Esqueci minha senha</a>
-            </div>
-            <button type="submit" className={styles["btn-login"]}>
-              Acessar Conta
-            </button>
-          </form>
-        </div>
-      </div>
-    </main>
+          </div>
+           
+           <div className={styles["image-container"]}>
+            <img src={tenis} alt="Tenis Nike" />
+           </div>
+          
+        </main>
         <footer>
           <div className={styles["footer-content"]}>
             <div className={`${styles["footer-column"]} ${styles.brand}`}>

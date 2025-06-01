@@ -117,7 +117,7 @@ const Produto = () => {
           <ul>
             <li><Link to="/" >Home</Link></li>
             <li><a href="#" className={styles.active}>Produtos</a></li>
-            <li><a href="#">Categorias</a></li>
+            <li><Link to='/Error404'>Categorias</Link></li>
             <li><Link to="/meus-pedidos" >Meus Pedidos</Link></li>
           </ul>
         </nav>
