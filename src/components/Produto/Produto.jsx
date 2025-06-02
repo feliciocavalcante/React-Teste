@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Produto.module.css';
+import styles from '../Produto/Produto.module.css';
 import tenis2 from '../../assets/img/tenis2.png';
 import logoNikeBranca from '../../assets/img/logoNikeBranca.png';
 import logoNike from '../../assets/img/logoNike.png';
