@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../Index/Index.module.css';
+import styles from './Index.module.css';
 import tenis from '../../assets/img/tenis.png';
 import { Link } from 'react-router-dom';
 import { supabase } from '../SupabaseClient/supabaseClient';
