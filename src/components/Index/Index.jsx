@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
-import styles from './index.module.css';
+import { useState } from 'react';
+import * as styles from './index.module.css';
 import tenis from '../../assets/img/tenis.png';
 import { Link } from 'react-router-dom';
 import { supabase } from '../SupabaseClient/supabaseClient';
 import { useNavigate } from 'react-router-dom';
-
-
 
 export default function Index() {
   const [email, setEmail] = useState('');
