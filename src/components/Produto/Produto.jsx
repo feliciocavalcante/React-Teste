@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react';
-<<<<<<< HEAD
 import styles from './Produto.module.css';
-=======
-import styles from '../Produto/Produto.module.css';
-import tenis2 from '../../assets/img/tenis2.png';
->>>>>>> 3e564f674e048f6b0505220922eccf80af7706d5
 import logoNikeBranca from '../../assets/img/logoNikeBranca.png';
 import logoNike from '../../assets/img/logoNike.png';
 import { Link } from 'react-router-dom';
