@@ -11,22 +11,22 @@ const Produto = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [sortValue, setSortValue] = useState('default');
   const [products, setProducts] = useState([
-    { id: 1, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '../../src/assets/img/tenistopo.png', hasOffer: true },
-    { id: 2, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 219.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
-    { id: 3, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
-    { id: 4, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 239.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
-    { id: 5, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 249.90, image: '/src/assets/img/tenistopo.png', hasOffer: true },
-    { id: 6, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 189.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
-    { id: 7, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenis4.png', hasOffer: false },
-    { id: 8, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 219.90, image: '/src/assets/img/tenis4.png', hasOffer: false },
-    { id: 9, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
-    { id: 10, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 209.90, image: '/src/assets/img/tenis4.png', hasOffer: false },
-    { id: 11, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 229.90, image: '/src/assets/img/tenis4.png', hasOffer: true },
-    { id: 12, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenis4.png', hasOffer: false },
-    { id: 13, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenis4.png', hasOffer: false },
-    { id: 14, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
-    { id: 15, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
-    { id: 16, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
+    { id: 1, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenistopo, hasOffer: true },
+    { id: 2, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 219.90, image: tenis4, hasOffer: false },
+    { id: 3, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenistopo, hasOffer: false },
+    { id: 4, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 239.90, image: tenistopo, hasOffer: false },
+    { id: 5, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 249.90, image: tenistopo, hasOffer: true },
+    { id: 6, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 189.90, image: tenis4, hasOffer: false },
+    { id: 7, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenis4, hasOffer: false },
+    { id: 8, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 219.90, image: tenis4, hasOffer: false },
+    { id: 9, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenis4, hasOffer: false },
+    { id: 10, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 209.90, image: tenis4, hasOffer: false },
+    { id: 11, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 229.90, image: tenistopo, hasOffer: true },
+    { id: 12, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenis4, hasOffer: false },
+    { id: 13, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenistopo, hasOffer: false },
+    { id: 14, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenistopo, hasOffer: false },
+    { id: 15, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenis4, hasOffer: false },
+    { id: 16, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: tenistopo, hasOffer: false },
   ]);
 
   const toggleMobileMenu = () => {
