@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './Produto.module.css';
 import logoNikeBranca from '../../assets/img/logoNikeBranca.png';
 import logoNike from '../../assets/img/logoNike.png';
+import tenistopo from '../../assets/img/tenistopo.png';
+import tenis4 from '../../assets/img/tenis4.png';
 import { Link } from 'react-router-dom';
 
 const Produto = () => {
