@@ -11,7 +11,7 @@ const Produto = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [sortValue, setSortValue] = useState('default');
   const [products, setProducts] = useState([
-    { id: 1, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenistopo.png', hasOffer: true },
+    { id: 1, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '../../src/assets/img/tenistopo.png', hasOffer: true },
     { id: 2, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 219.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
     { id: 3, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 199.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
     { id: 4, name: 'Tênis de Corrida - Mountain - Cinza e Azul', price: 239.90, image: '/src/assets/img/tenistopo.png', hasOffer: false },
